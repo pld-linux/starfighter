@@ -24,12 +24,15 @@ Starfighter jest strzelank± 2D.
 
 %prep
 %setup -q -n %{name}-%{mversion}
+cat makefile |sed -e 's@-O3@@g' >Makefile
+rm makefile
 
 %build
 %{__make} \
 	BINDIR=%{_bindir} \
  	DOCDIR=%{_docdir}/%{name}-%{version} \
-	DATADIR=%{_datadir}/%{name}/
+	DATADIR=%{_datadir}/%{name}/ \
+	CFLAGS="%{rpmcflags} `sdl-config --cflags` -Wall -DLINUX"
 
 %install
 rm -rf $RPM_BUILD_ROOT
