@@ -18,7 +18,6 @@ Requires:	SDL_image >= 1.2.3-2
 Requires:	SDL_mixer >= 1.2.5-2
 Requires:	SDL >= 1.2.7-1
 Requires:	libstdc++-static >= 3.3.4-3
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
