@@ -1,7 +1,7 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		mversion	%(echo %{version} |cut -f 1 -d r)
-Summary:	Starfighter is an old school 2D shoot'em up
-Summary(pl):	Starfighter jest strzelank± 2D.
+Summary:	Starfighter is an old school 2D shoot 'em up
+Summary(pl):	Starfighter jest strzelank± 2D
 Name:		starfighter
 Version:	1.1r1
 Release:	1
@@ -17,7 +17,7 @@ BuildRequires:	libstdc++-devel >= 3.3.4-3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Starfighter is an old school 2D shoot'em up.
+Starfighter is an old school 2D shoot 'em up.
 
 %description -l pl
 Starfighter jest strzelank± 2D.
