@@ -14,10 +14,6 @@ BuildRequires:	SDL-devel >= 1.2.7-1
 BuildRequires:	SDL_mixer-devel >= 1.2.5-2
 BuildRequires:	SDL_image-devel >= 1.2.3-2
 BuildRequires:	libstdc++-devel >= 3.3.4-3
-Requires:	SDL_image >= 1.2.3-2
-Requires:	SDL_mixer >= 1.2.5-2
-Requires:	SDL >= 1.2.7-1
-Requires:	libstdc++-static >= 3.3.4-3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,7 +33,6 @@ Starfighter jest strzelank± 2D.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
 install -D %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 install -D %{name}.pak $RPM_BUILD_ROOT%{_datadir}/%{name}/%{name}.pak
 
