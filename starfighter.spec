@@ -40,7 +40,7 @@ Starfighter jest strzelank± 2D.
 rm -rf $RPM_BUILD_ROOT
 # create directories if necessary
 install -D %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-install -D %{name}.pak %{_datadir}/%{name}/%{name}.pak
+install -D %{name}.pak $RPM_BUILD_ROOT%{_datadir}/%{name}/%{name}.pak
 
 %clean
 rm -rf $RPM_BUILD_ROOT
