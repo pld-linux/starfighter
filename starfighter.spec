@@ -1,7 +1,7 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		mversion	%(echo %{version} |cut -f 1 -d r)
 Summary:	Starfighter - an old school 2D shoot 'em up
-Summary(pl.UTF-8):   Starfighter - strzelanka 2D w starym stylu
+Summary(pl.UTF-8):	Starfighter - strzelanka 2D w starym stylu
 Name:		starfighter
 Version:	1.1r1
 Release:	1
